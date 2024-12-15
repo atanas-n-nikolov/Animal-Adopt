@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.main-container {
+  display: flex;
+  max-width: 1216px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
