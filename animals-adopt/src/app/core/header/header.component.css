@@ -8,8 +8,24 @@
   backdrop-filter: blur(4px);
 }
 
+.logo {
+  display: flex;
+}
+
+.logo a {
+  display: flex;
+}
+
+.logo img {
+  max-width: 100%;
+  min-width: 100%;
+}
+
 a {
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav-container {

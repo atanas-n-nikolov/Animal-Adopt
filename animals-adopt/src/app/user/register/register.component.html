@@ -1,0 +1,82 @@
+<main class="form-container">
+  <section class="main-section">
+    <header>
+      <h2>Sign up</h2>
+      <p>
+        Join our community and become part of our mission to create a better
+        future for animals! By registering, you’ll have access to a full range
+        of services.
+      </p>
+    </header>
+    <form>
+      <fieldset class="name-container">
+        <p class="name-c">
+        <label for="firstName">First name
+        <input
+          type="text"
+          name="firstName"
+          id="firstName"
+          placeholder="e.g. John"
+          ngModel
+          required
+          minlength="2"
+          maxlength="20"
+        /></label>
+      </p>
+      <p class="name-c">
+        <label for="lastName">Last name
+        <input
+          type="text"
+          name="lastName"
+          id="lastName"
+          placeholder="e.g. Doe"
+          ngModel
+          required
+          minlength="2"
+        /></label>
+      </p>
+      </fieldset>
+      <fieldset>
+        <label for="email">Email</label>
+        <input
+          type="text"
+          name="email"
+          id="email"
+          placeholder="e.g. john@mail.com"
+          ngModel
+          required
+          minlength="5"
+        />
+      </fieldset>
+      <fieldset>
+        <label for="password">Password</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          ngModel
+          required
+          minlength="6"
+        />
+      </fieldset>
+      <fieldset>
+        <label for="rePassword">Re-password</label>
+        <input
+          type="password"
+          name="rePassword"
+          id="rePassword"
+          ngModel
+          required
+        />
+      </fieldset>
+      <button>Register</button>
+    </form>
+    <footer class="login-a">
+      <p>Already have an account?</p>
+      <a routerLink="/users/login">Log in</a>
+    </footer>
+  </section>
+  <aside class="register-img">
+    <img src="assets/img/register-dog.png" alt="register-dog" />
+  </aside>
+</main>

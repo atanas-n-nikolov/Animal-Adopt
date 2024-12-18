@@ -1,0 +1,41 @@
+<main class="form-container">
+  <section class="main-section">
+    <header>
+      <h2>Welcome back!</h2>
+      <p>Please enter your details.</p>
+    </header>
+    <form>
+      <fieldset>
+        <label for="email">Email</label>
+        <input
+          type="text"
+          name="email"
+          id="email"
+          placeholder="e.g. john@mail.com"
+          ngModel
+          required
+          minlength="5"
+        />
+      </fieldset>
+      <fieldset>
+        <label for="password">Password</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          ngModel
+          required
+          minlength="6"
+        />
+      </fieldset>
+      <button>Log in</button>
+    </form>
+    <footer class="login-a">
+      <p>Don't have an account?</p>
+      <a routerLink="/users/register">Sign up</a>
+    </footer>
+  </section>
+  <aside class="login-img">
+    <img src="assets/img/login-cat.png" alt="login-cat" />
+  </aside>
+</main>

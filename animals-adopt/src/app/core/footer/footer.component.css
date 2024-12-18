@@ -18,6 +18,15 @@
   align-items: center;
 }
 
+.footer-top a {
+  display: flex;
+}
+
+.footer-top img {
+  max-width: 100%;
+  min-width: 100%;
+}
+
 .footer-nav ul {
   list-style-type: none;
   display: flex;
@@ -30,7 +39,6 @@
   padding: 32px 0;
   align-items: center;
   border-top: 1px solid #cdd0db;
-  padding-top: 16px;
 }
 
 .footer-bottom a, p {
