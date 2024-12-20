@@ -19,12 +19,16 @@ header {
   gap: 8px;
 }
 
-p {
-  color: #3f3e3e;
+header p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #3F3E3E;
 }
 
 label {
   display: flex;
+  color: #181818;
   flex-direction: column;
   gap: 4px;
   font-size: 16px;
@@ -71,8 +75,21 @@ a {
 }
 
 .login-a {
+  color: #3F3E3E;
   gap: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+#email {
+  background: url('../../../assets/icons/email.svg') no-repeat right 16px center;
+}
+
+#password {
+  background: url('../../../assets/icons/eye-off.svg') no-repeat right 16px center;
+}
+
+#email, #password {
+  padding-right: 50px;
 }

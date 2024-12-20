@@ -1,0 +1,80 @@
+<section class="adopt-section">
+  <header class="adopt-header">
+    <h3>Adopt</h3>
+    <p>
+      Give a second chance to an animal in need! In our adoption section, you’ll
+      find pets looking for loving families. Every animal deserves a home where
+      they are loved and feel safe.
+    </p>
+  </header>
+
+  <section class="filter-container">
+    <form class="filter-options">
+      <figure class="filter-icon">
+        <img src="assets/icons/filter-alt.svg" alt="Filter Icon" />
+      </figure>
+      <fieldset class="filter-option">
+        <div class="custom-select" id="animal-type" (click)="toggle($event)">
+          <span class="selected-option">Type of Animal</span>
+          <div class="dropdown">
+            <div class="option" data-value="Dog"><input type="checkbox" class="checkbox">Dog</div>
+            <div class="option" data-value="Cat"><input type="checkbox" class="checkbox">Cat</div>
+            <div class="option" data-value="Other"><input type="checkbox" class="checkbox">Other</div>
+          </div>
+        </div>
+      </fieldset>
+  
+      <fieldset class="filter-option">
+        <div class="custom-select" id="age" (click)="toggle($event)">
+          <span class="selected-option">Age</span>
+          <div class="dropdown">
+            <div class="option" data-value="Young"><input type="checkbox" class="checkbox">Young</div>
+            <div class="option" data-value="Adult"><input type="checkbox" class="checkbox">Adult</div>
+            <div class="option" data-value="Senior"><input type="checkbox" class="checkbox">Senior</div>
+          </div>
+        </div>
+      </fieldset>
+  
+      <fieldset class="filter-option">
+        <div class="custom-select" id="size" (click)="toggle($event)">
+          <span class="selected-option">Size</span>
+          <div class="dropdown">
+            <div class="option" data-value="Small"><input type="checkbox" class="checkbox">Small</div>
+            <div class="option" data-value="Medium"><input type="checkbox" class="checkbox">Medium</div>
+            <div class="option" data-value="Large"><input type="checkbox" class="checkbox">Large</div>
+          </div>
+        </div>
+      </fieldset>
+  
+      <fieldset class="filter-option">
+        <div class="custom-select" id="gender" (click)="toggle($event)">
+          <span class="selected-option">Gender</span>
+          <div class="dropdown">
+            <div class="option" data-value="Male"><input type="checkbox" class="checkbox">Male</div>
+            <div class="option" data-value="Female"><input type="checkbox" class="checkbox">Female</div>
+          </div>
+        </div>
+      </fieldset>
+  
+      <fieldset class="filter-option">
+        <div class="custom-select" id="special-needs" (click)="toggle($event)">
+          <span class="selected-option">Special Needs</span>
+          <div class="dropdown">
+            <div class="option" data-value="Yes"><input type="checkbox" class="checkbox">Yes</div>
+            <div class="option" data-value="No"><input type="checkbox" class="checkbox">No</div>
+          </div>
+        </div>
+      </fieldset>
+  
+      <fieldset class="filter-option">
+        <div class="custom-select" id="location" (click)="toggle($event)">
+          <span class="selected-option">Location</span>
+          <div class="dropdown">
+          </div>
+        </div>
+      </fieldset>
+    </form>
+    <button class="clear-filter" (click)="clearFilter()">Clear Filter</button>
+  </section>
+  <section class="adopt-animals"></section>
+</section>
