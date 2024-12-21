@@ -1,1 +1,64 @@
-<p>lost-found works!</p>
+<section class="lost-section">
+  <header class="lost-header">
+    <h3>Lost & Found</h3>
+    <p>
+      If you’ve lost your pet or found a stray animal, we’re here to help. Our
+      goal is to reconnect lost animals with their families as quickly and
+      safely as possible. In this section, you can find information about lost
+      or found animals, along with photos and a description.
+    </p>
+    <p>
+      Community support is essential for the successful reunion of pets and
+      their loved ones. Please browse the listings or share your story with us.
+      Let’s work together to bring these animals back to their families!
+    </p>
+  </header>
+
+  <section class="filter-container">
+    <form class="filter-options">
+      <figure class="filter-icon">
+        <img src="assets/icons/filter-alt.svg" alt="Filter Icon" />
+      </figure>
+      <fieldset class="filter-option">
+        <div class="custom-select" id="animal-status" (click)="toggle($event)">
+          <span class="selected-option">Animal Status</span>
+          <div class="dropdown">
+            <div class="option" data-value="Lost"><input type="checkbox" class="checkbox">Lost</div>
+            <div class="option" data-value="Found"><input type="checkbox" class="checkbox">Found</div>
+          </div>
+        </div>
+      </fieldset>
+  
+      <fieldset class="filter-option">
+        <div class="custom-select" id="animal-type" (click)="toggle($event)">
+          <span class="selected-option">Type of Animal</span>
+          <div class="dropdown">
+            <div class="option" data-value="Dog"><input type="checkbox" class="checkbox">Dog</div>
+            <div class="option" data-value="Cat"><input type="checkbox" class="checkbox">Cat</div>
+            <div class="option" data-value="Other"><input type="checkbox" class="checkbox">Other</div>
+          </div>
+        </div>
+      </fieldset>
+  
+      <fieldset class="filter-option">
+        <div class="custom-select" id="gender" (click)="toggle($event)">
+          <span class="selected-option">Gender</span>
+          <div class="dropdown">
+            <div class="option" data-value="Male"><input type="checkbox" class="checkbox">Male</div>
+            <div class="option" data-value="Female"><input type="checkbox" class="checkbox">Female</div>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="filter-option">
+        <div class="custom-select" id="location" (click)="toggle($event)">
+          <span class="selected-option">Location</span>
+          <div class="dropdown">
+          </div>
+        </div>
+      </fieldset>
+    </form>
+    <button class="clear-filter" (click)="clearFilter()">Clear Filter</button>
+  </section>
+  <section class="adopt-animals"></section>
+</section>

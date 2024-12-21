@@ -1,0 +1,162 @@
+.lost-section {
+  display: flex;
+  flex-direction: column;
+  max-width: 1216px;
+  padding: 0 60px;
+  margin: 40px auto;
+  gap: 32px;
+  box-sizing: border-box;
+}
+
+.lost-header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+h3 {
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 46.8px;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #3f3e3e;
+}
+
+.filter-container {
+  display: flex;
+  padding: 16px 24px;
+  background-color: #f7f9fb;
+  border-radius: 12px;
+  justify-content: space-between;
+}
+
+.filter-options {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.custom-select {
+  display: flex;
+  position: relative;
+  align-items: center;
+  cursor: pointer;
+}
+
+.custom-select::after {
+  content: '';
+  width: 16px;
+  height: 16px;
+  background: url("../../assets/icons/down-small.svg") no-repeat center;
+  background-size: contain;
+  position: absolute;
+  right: 16px;
+  pointer-events: none;
+}
+
+.selected-option {
+  display: block;
+  width: 100%;
+  padding: 8px 16px;
+  border: 1px solid #cdd0db;
+  border-radius: 40px;
+  color: #84868e;
+  padding-right: 40px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  background-color: white;
+  border: 1px solid #cdd0db;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  max-height: 200px;
+  overflow-y: auto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.option {
+  padding: 8px 24px 8px 8px;
+  gap: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.option:hover {
+  background-color: #f0f0f0;
+}
+
+.checkbox {
+  padding: 4px;
+  height: 18px;
+  width: 18px;
+  cursor: pointer;
+}
+
+.clear-filter {
+  background-color: transparent;
+  border: none;
+  text-decoration: underline;
+  color: #8C92AF;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  cursor: pointer;
+}
+
+.custom-select.open .dropdown {
+  display: block;
+}
+
+.adopt-animals {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  justify-content: start;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+#animal-status {
+  width: 150px;
+  min-height: 40px;
+}
+
+#animal-type {
+  width: 169px;
+  min-height: 40px;
+}
+
+#gender {
+  width: 115px;
+  min-height: 40px;
+}
+
+#location {
+  width: 123px;
+  min-height: 40px;
+}
